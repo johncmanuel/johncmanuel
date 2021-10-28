@@ -1,7 +1,7 @@
 
 # Hi, welcome to my profile!
 
-I'm John Carlo Manuel, a software engineer with emphasis on low-level development.
+I'm John Carlo Manuel, an electrical engineering student with emphasis on low-level development.
 
 ### Programming Languages
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) 
