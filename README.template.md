@@ -1,5 +1,11 @@
 # johncmanuel
 
+<p>
+<img src="media/ph.png" alt="philippines flag"></img>
+<img src="media/us.png" alt="united states flag"></img>
+
+</p>
+
 ```python
 >>> from goated_programmers import johncmanuel
 >>> import json
@@ -41,7 +47,7 @@
 ## Socials
 
 <p>
-<a href="https://www.linkedin.com/in/johncarlomanuel/" target="_blank">
+  <a href="https://www.linkedin.com/in/johncarlomanuel/" target="_blank">
     <img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
   <a href="mailto:johncarlomanuel@csu.fullerton.edu">
@@ -50,5 +56,9 @@
  <a href="https://www.johncarlomanuel.com/" target="_blank">
     <img alt="Website" src="https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white" />
   </a>
-<a href=>
+  <a href="https://mastodon.social/@johncmanuel" target="_blank">
+  <img alt="Mastodon" src="https://img.shields.io/badge/-MASTODON-%232B90D9?style=for-the-badge&logo=mastodon&logoColor=white">
+  </a>
+  <a href="https://www.youtube.com/channel/UCwmDHRVIwqhV-zRVavMVOsw" target="_blank">
+  <img alt="YouTube" src="https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white"></img></a>
 </p>
