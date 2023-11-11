@@ -25,8 +25,8 @@
     "Distributed Systems"
   ],
   "github_stats": {
-    "public_repos": "{{.PublicReposCount}}",
-    "stargazers": "{{.StarGazersCount}}"
+    "public_repos": {{.PublicReposCount}},
+    "stargazers": {{.StarGazersCount}}
   },
   "languages": {
     {{- range $i, $lang := .Languages}}
