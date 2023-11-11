@@ -58,7 +58,7 @@ func getGitHubStats() (int, int, Languages, error) {
 		return 0, 0, nil, err
 	}
 
-	token, ok := os.LookupEnv("GITHUB_TOKEN")
+	token, ok := os.LookupEnv("TOKEN")
 	if !ok {
 		panic("github token not set")
 	}

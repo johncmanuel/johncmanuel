@@ -21,7 +21,7 @@ jobs:
             - name: create env file
               run: |
                   touch .env
-                  echo GITHUB_TOKEN=${{secrets.GITHUB_TOKEN}} >> .env
+                  echo TOKEN=${{secrets.TOKEN}} >> .env
                   cat .env
 
             - name: run script
