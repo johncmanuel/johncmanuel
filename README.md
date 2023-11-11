@@ -26,17 +26,17 @@
   ],
   "github_stats": {
     "public_repos": 16,
-    "stargazers": 8
+    "stargazers": 9
   },
   "languages": {
     "JavaScript": {
-      "usagePercent": 44
+      "usagePercent": 42
     },
     "Python": {
-      "usagePercent": 34
+      "usagePercent": 33
     },
-    "C++": {
-      "usagePercent": 7
+    "TypeScript": {
+      "usagePercent": 11
     },
     "Other": {
       "usagePercent": 14
