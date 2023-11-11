@@ -203,7 +203,7 @@ func main() {
 	}
 
 	// Save the generated markdown to a new file
-	outputFile := "README_TEST.md"
+	outputFile := "README.md"
 	
 	err = os.WriteFile(outputFile, output.Bytes(), 0644)
 	if err != nil {
