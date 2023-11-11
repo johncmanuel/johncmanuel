@@ -1,0 +1,34 @@
+name: Update README
+on:
+    schedule:
+        - cron: "0 0 1 * *"
+    push: { branches: ["master", "main"] }
+
+permissions:
+    content: write
+
+jobs:
+    update-readme:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v4
+
+            - uses: actions/setup-go@v4
+              with:
+                  go-version: "^1.13.1"
+
+            - name: create env file
+              run: |
+                  touch .env
+                  echo GITHUB_TOKEN=${{secrets.GITHUB_TOKEN}} >> .env
+                  cat .env
+
+            - name: run script
+              run: |
+                  go run main.go
+                  git config --global user.name "github-actions"
+                  git config --global user.email "github-actions@github.com"
+                  git add .
+                  git commit -m "Automatically updated README"
+                  git push
