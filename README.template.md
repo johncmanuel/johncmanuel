@@ -31,7 +31,7 @@
   "languages": {
     {{- range $i, $lang := .Languages}}
     "{{.Language | html}}": {
-      "usagePercent": {{.Percentage}}
+      "usage_percent": {{.Percentage}}
     }{{if notLastElement $i $.Languages}},{{end}}{{end}}
   },
   "hobbies": [
@@ -39,7 +39,7 @@
     "Anime",
     "Code",
     "Writing",
-    "Manga",
+    "Manga"
   ]
 }
 ```
