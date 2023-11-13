@@ -30,16 +30,16 @@
   },
   "languages": {
     "JavaScript": {
-      "usagePercent": 42
+      "usage_percent": 42
     },
     "Python": {
-      "usagePercent": 33
+      "usage_percent": 33
     },
     "TypeScript": {
-      "usagePercent": 11
+      "usage_percent": 11
     },
     "Other": {
-      "usagePercent": 14
+      "usage_percent": 14
     }
   },
   "hobbies": [
@@ -47,7 +47,7 @@
     "Anime",
     "Code",
     "Writing",
-    "Manga",
+    "Manga"
   ]
 }
 ```
