@@ -33,10 +33,10 @@
       "usage_percent": 40
     },
     "Python": {
-      "usage_percent": 34
+      "usage_percent": 33
     },
     "TypeScript": {
-      "usage_percent": 13
+      "usage_percent": 14
     },
     "Other": {
       "usage_percent": 14
