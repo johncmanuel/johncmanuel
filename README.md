@@ -30,13 +30,13 @@
   },
   "languages": {
     "JavaScript": {
-      "usage_percent": 39
+      "usage_percent": 37
     },
     "Python": {
-      "usage_percent": 34
+      "usage_percent": 37
     },
     "TypeScript": {
-      "usage_percent": 14
+      "usage_percent": 13
     },
     "Other": {
       "usage_percent": 13
