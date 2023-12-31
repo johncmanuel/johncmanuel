@@ -29,10 +29,10 @@
     "stargazers": 10
   },
   "languages": {
-    "JavaScript": {
+    "Python": {
       "usage_percent": 37
     },
-    "Python": {
+    "JavaScript": {
       "usage_percent": 37
     },
     "TypeScript": {
