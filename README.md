@@ -1,10 +1,4 @@
-# johncmanuel
-
-<p>
-<img src="media/ph.png" alt="philippines flag"></img>
-<img src="media/us.png" alt="united states flag"></img>
-
-</p>
+<h1 align="center">johncmanuel 🇵🇭 🇺🇸</h1>
 
 ```python
 >>> from goated_programmers import johncmanuel
@@ -47,7 +41,8 @@
     "Anime",
     "Code",
     "Writing",
-    "Manga"
+    "Manga",
+    "Reading"
   ]
 }
 ```
@@ -67,6 +62,13 @@
   <a href="https://mastodon.social/@johncmanuel" target="_blank">
   <img alt="Mastodon" src="https://img.shields.io/badge/-MASTODON-%232B90D9?style=for-the-badge&logo=mastodon&logoColor=white">
   </a>
-  <a href="https://www.youtube.com/channel/UCwmDHRVIwqhV-zRVavMVOsw" target="_blank">
+  <a href="https://www.youtube.com/@johncarlomanuel" target="_blank">
   <img alt="YouTube" src="https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white"></img></a>
+  <a href="https://twitter.com/johncmanuel" target="_blank">
+  <img alt="Twitter" src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"></img>
+  </a>
 </p>
+
+<hr />
+
+<a href="https://www.johncarlomanuel.com/" target="_blank"><img src="media/banner.png" alt="banner" /></a>
