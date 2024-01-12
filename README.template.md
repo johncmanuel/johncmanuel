@@ -4,7 +4,7 @@
 >>> from goated_programmers import johncmanuel
 >>> import json
 >>> john = johncmanuel()
->>> print(json.dumps(john.bio), indent=2)
+>>> print(json.dumps(john.bio, indent=2))
 {
   "name": "John Carlo Manuel",
   "occupation": "Software Engineer",
