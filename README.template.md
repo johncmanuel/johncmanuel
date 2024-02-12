@@ -51,7 +51,7 @@
  <a href="https://www.johncarlomanuel.com/" target="_blank">
     <img alt="Website" src="https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white" />
   </a>
-  <a href="https://mastodon.social/@johncmanuel" target="_blank">
+  <a rel="me" href="https://mastodon.social/@johncmanuel" target="_blank">
   <img alt="Mastodon" src="https://img.shields.io/badge/-MASTODON-%232B90D9?style=for-the-badge&logo=mastodon&logoColor=white">
   </a>
   <a href="https://www.youtube.com/@johncarlomanuel" target="_blank">
