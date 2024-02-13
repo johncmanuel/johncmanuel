@@ -39,14 +39,19 @@
 }
 ```
 
+## Contact
+
+For quick responses, email me.
+
+<a href="mailto:mail@johncarlomanuel.com">
+    <img alt="Email" src="https://img.shields.io/badge/Email Me-D14836?style=for-the-badge&logoColor=white" />
+</a>
+
 ## Socials
 
 <p>
   <a href="https://www.linkedin.com/in/johncarlomanuel/" target="_blank">
     <img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <a href="mailto:johncarlomanuel@csu.fullerton.edu">
-    <img alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
  <a href="https://www.johncarlomanuel.com/" target="_blank">
     <img alt="Website" src="https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white" />
