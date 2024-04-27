@@ -27,10 +27,10 @@
       "usage_percent": 30
     },
     "JavaScript": {
-      "usage_percent": 29
+      "usage_percent": 28
     },
     "TypeScript": {
-      "usage_percent": 15
+      "usage_percent": 16
     },
     "Other": {
       "usage_percent": 27
