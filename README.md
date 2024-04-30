@@ -24,7 +24,7 @@
   },
   "languages": {
     "Python": {
-      "usage_percent": 30
+      "usage_percent": 29
     },
     "JavaScript": {
       "usage_percent": 28
