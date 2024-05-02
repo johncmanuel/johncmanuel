@@ -33,7 +33,7 @@
       "usage_percent": 16
     },
     "Other": {
-      "usage_percent": 27
+      "usage_percent": 26
     }
   },
   "hobbies": [
