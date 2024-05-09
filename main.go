@@ -16,6 +16,59 @@ import (
 	"github.com/joho/godotenv"
 )
 
+var client = &http.Client{Timeout: 15 * time.Second}
+var username = "johncmanuel"
+var ghUrl = "https://api.github.com"
+
+func main() {
+	templateFile := "README.template.md"
+	content, err := os.ReadFile(templateFile)
+	if err != nil {
+		fmt.Println("Error reading template file:", err)
+		return
+	}
+
+	stars, repos, langs, err := getGitHubStats()
+	topLangs := getTopLangs(langs)
+
+	fmt.Println("top langs:", topLangs)
+
+	data := ReadMeData{
+		PublicReposCount: strconv.Itoa(repos),
+		StarGazersCount: strconv.Itoa(stars),
+		Languages: topLangs,
+	}
+
+	funcMap := template.FuncMap{
+		"notLastElement": notLastElement,
+	}
+
+	// Replace the values in the template
+	tmpl, err := template.New("markdown").Funcs(funcMap).Parse(string(content))
+	if err != nil {
+		fmt.Println("Error parsing template:", err)
+		return
+	}
+
+	var output bytes.Buffer
+	err = tmpl.Execute(&output, data)
+	if err != nil {
+		fmt.Println("Error executing template:", err)
+		return
+	}
+
+	// Save the generated markdown to a new file
+	outputFile := "README.md"
+	
+	err = os.WriteFile(outputFile, output.Bytes(), 0644)
+	if err != nil {
+		fmt.Println("Error writing output file:", err)
+		return
+	}
+
+	fmt.Println("Markdown file generated successfully:", outputFile)
+}
+
 type GitHubRepository struct {
 	StargazersCount int `json:"stargazers_count"`
 	LanguagesURL string `json:"languages_url"`
@@ -36,10 +89,6 @@ type ReadMeData struct {
 	Languages []LanguagePercentage
 }
 
-var client = &http.Client{Timeout: 15 * time.Second}
-var username = "johncmanuel"
-var ghUrl = "https://api.github.com"
-
 func httpAuthReq(method string, url string, token string) *http.Request {
 	req, err := http.NewRequest(method, url, nil)
 	if err != nil {
@@ -54,8 +103,7 @@ func httpAuthReq(method string, url string, token string) *http.Request {
 func getGitHubStats() (int, int, Languages, error) {
 	err := godotenv.Load()
 	if err != nil {
-		fmt.Println("Error loading .env file")
-		return 0, 0, nil, err
+		panic("Error loading .env file")
 	}
 
 	token, ok := os.LookupEnv("TOKEN")
@@ -64,15 +112,13 @@ func getGitHubStats() (int, int, Languages, error) {
 	}
 
 	repoUrl := fmt.Sprintf("%s/users/%s/repos", ghUrl, username)
-	
 	repoReq := httpAuthReq("GET", repoUrl, token)
 	
 	var repos []GitHubRepository
 
 	response, err := client.Do(repoReq)
     if err != nil {
-        fmt.Println("Error getting response:", err)
-		return 0, 0, nil, err
+       	panic("Error getting a response.")
     }
     defer response.Body.Close()
 
@@ -82,12 +128,12 @@ func getGitHubStats() (int, int, Languages, error) {
 	languages := make(Languages)
 
 	if err := json.NewDecoder(response.Body).Decode(&repos); err != nil {
-        fmt.Println("Error decoding response:", err)
-		return 0, 0, nil, err
+        panic("Error decoding a response.")
     }
 
 	numOfStargazers := 0
 
+	// Loop through each repo and retrieve its popular languages
 	for _, repo := range repos {
 		numOfStargazers += repo.StargazersCount
 
@@ -163,53 +209,4 @@ func getTopLangs(languages Languages) []LanguagePercentage {
 
 func notLastElement(index int, slice []LanguagePercentage) bool {
 	return index < len(slice)-1
-}
-
-func main() {
-	templateFile := "README.template.md"
-	content, err := os.ReadFile(templateFile)
-	if err != nil {
-		fmt.Println("Error reading template file:", err)
-		return
-	}
-
-	stars, repos, langs, err := getGitHubStats()
-	topLangs := getTopLangs(langs)
-
-	fmt.Println("top langs:", topLangs)
-
-	data := ReadMeData{
-		PublicReposCount: strconv.Itoa(repos),
-		StarGazersCount: strconv.Itoa(stars),
-		Languages: topLangs,
-	}
-
-	funcMap := template.FuncMap{
-		"notLastElement": notLastElement,
-	}
-
-	// Replace the values in the template
-	tmpl, err := template.New("markdown").Funcs(funcMap).Parse(string(content))
-	if err != nil {
-		fmt.Println("Error parsing template:", err)
-		return
-	}
-
-	var output bytes.Buffer
-	err = tmpl.Execute(&output, data)
-	if err != nil {
-		fmt.Println("Error executing template:", err)
-		return
-	}
-
-	// Save the generated markdown to a new file
-	outputFile := "README.md"
-	
-	err = os.WriteFile(outputFile, output.Bytes(), 0644)
-	if err != nil {
-		fmt.Println("Error writing output file:", err)
-		return
-	}
-
-	fmt.Println("Markdown file generated successfully:", outputFile)
 }
