@@ -19,7 +19,7 @@
     "Distributed Systems"
   ],
   "github_stats": {
-    "public_repos": 25,
+    "public_repos": 26,
     "stargazers": 11
   },
   "languages": {
@@ -30,7 +30,7 @@
       "usage_percent": 27
     },
     "TypeScript": {
-      "usage_percent": 15
+      "usage_percent": 16
     },
     "Other": {
       "usage_percent": 28
