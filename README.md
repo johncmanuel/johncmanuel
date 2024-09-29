@@ -24,7 +24,7 @@
   },
   "languages": {
     "Python": {
-      "usage_percent": 33
+      "usage_percent": 35
     },
     "JavaScript": {
       "usage_percent": 22
@@ -33,7 +33,7 @@
       "usage_percent": 14
     },
     "Other": {
-      "usage_percent": 29
+      "usage_percent": 28
     }
   },
   "hobbies": [
