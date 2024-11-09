@@ -20,20 +20,20 @@
   ],
   "github_stats": {
     "public_repos": 30,
-    "stargazers": 10
+    "stargazers": 9
   },
   "languages": {
     "Python": {
-      "usage_percent": 46
-    },
-    "JavaScript": {
-      "usage_percent": 13
+      "usage_percent": 48
     },
     "TypeScript": {
-      "usage_percent": 13
+      "usage_percent": 14
+    },
+    "JavaScript": {
+      "usage_percent": 8
     },
     "Other": {
-      "usage_percent": 27
+      "usage_percent": 29
     }
   },
   "hobbies": [
