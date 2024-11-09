@@ -26,10 +26,10 @@
     "Python": {
       "usage_percent": 46
     },
-    "TypeScript": {
+    "JavaScript": {
       "usage_percent": 13
     },
-    "JavaScript": {
+    "TypeScript": {
       "usage_percent": 13
     },
     "Other": {
