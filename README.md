@@ -24,10 +24,10 @@
   },
   "languages": {
     "Python": {
-      "usage_percent": 44
+      "usage_percent": 42
     },
     "TypeScript": {
-      "usage_percent": 17
+      "usage_percent": 19
     },
     "JavaScript": {
       "usage_percent": 8
