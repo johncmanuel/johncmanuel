@@ -20,7 +20,7 @@
   ],
   "github_stats": {
     "public_repos": 30,
-    "stargazers": 11
+    "stargazers": 10
   },
   "languages": {
     "Python": {
