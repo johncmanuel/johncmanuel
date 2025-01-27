@@ -24,16 +24,16 @@
   },
   "languages": {
     "Python": {
-      "usage_percent": 45
+      "usage_percent": 44
     },
     "TypeScript": {
-      "usage_percent": 18
+      "usage_percent": 17
     },
     "JavaScript": {
       "usage_percent": 8
     },
     "Other": {
-      "usage_percent": 29
+      "usage_percent": 30
     }
   },
   "hobbies": [
