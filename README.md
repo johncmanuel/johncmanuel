@@ -30,7 +30,7 @@
       "usage_percent": 18
     },
     "JavaScript": {
-      "usage_percent": 7
+      "usage_percent": 8
     },
     "Other": {
       "usage_percent": 32
