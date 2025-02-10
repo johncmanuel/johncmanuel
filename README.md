@@ -30,7 +30,7 @@
       "usage_percent": 18
     },
     "C++": {
-      "usage_percent": 8
+      "usage_percent": 9
     },
     "Other": {
       "usage_percent": 32
