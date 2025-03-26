@@ -49,7 +49,7 @@
 
 ## Contact
 
-For quick responses, [email me](mailto:mail@johncarlomanuel.com) or [send me a DM on X/Twitter](https://x.com/messages/compose?recipient_id=1727183654676500480).
+For quick responses, [email me](mailto:johncnmanuel@gmail.com) or [send me a DM on X/Twitter](https://x.com/messages/compose?recipient_id=1727183654676500480).
 
 <hr />
 
