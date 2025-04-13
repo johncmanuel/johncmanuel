@@ -27,13 +27,13 @@
       "usage_percent": 43
     },
     "TypeScript": {
-      "usage_percent": 23
+      "usage_percent": 24
     },
     "C++": {
       "usage_percent": 11
     },
     "Other": {
-      "usage_percent": 23
+      "usage_percent": 24
     }
   },
   "hobbies": [
