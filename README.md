@@ -27,7 +27,7 @@
       "usage_percent": 42
     },
     "TypeScript": {
-      "usage_percent": 24
+      "usage_percent": 25
     },
     "C++": {
       "usage_percent": 11
