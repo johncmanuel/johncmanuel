@@ -3,7 +3,7 @@
 - 👨‍ Software engineer with experience in full-stack web development 
 - 🎓 Currently completing my BS in Computer Science at Cal State Fullerton
 - 📦 {{.PublicReposCount}} public repositories, ⭐ {{.StarGazersCount}} total stars
-- 💻 Most used languages:&nbsp; {{range $i, $lang := .Languages}}{{.Language | html}} ({{.Percentage}}%){{if notLastElement $i $.Languages}}, {{end}}{{end}} 
+- 💻 Most used languages:&nbsp;{{range $i, $lang := .Languages}}{{.Language | html}} ({{.Percentage}}%){{if notLastElement $i $.Languages}}, {{end}}{{end}} 
 - 💡 Interests: Full-Stack Development, Game Development, Distributed Systems
 - 😊 Hobbies: Video Games, Anime, Code, Writing, Manga, Reading
 
