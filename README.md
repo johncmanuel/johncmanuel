@@ -7,7 +7,7 @@
 - Interests: Full-Stack Development, Game Development, Distributed Systems
 - Hobbies: Video Games, Anime, Code, Writing, Manga, Reading
 
-## Important Links
+## links  
 
 - Website: [johncarlomanuel.com](https://johncarlomanuel.com/)
 - Resume: [johncmanuel.com/resume](https://johncarlomanuel.com/resume)
