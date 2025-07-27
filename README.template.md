@@ -4,7 +4,7 @@
 - Currently completing my BS in Computer Science at Cal State Fullerton.
 - {{.PublicReposCount}} public repositories
 - {{.StarGazersCount}} total stars
-- Most used languages: {{- range $i, $lang := .Languages -}}{{.Language}} ({{.Percentage}}%){{if ne $i (sub (len .Languages) 1)}}, {{end}}{{- end -}} 
+- Most used languages: {{- range $i, $lang := .Languages -}}{{.Language | html}} ({{.Percentage}}%){{if notLastElement $i $.Languages}},{{end}}{{end}} 
 
 - Website: [johncarlomanuel.com](https://johncarlomanuel.com/)
 - Resume: [johncmanuel.com/resume](https://johncarlomanuel.com/resume)
