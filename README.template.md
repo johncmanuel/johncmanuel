@@ -17,6 +17,7 @@ For quick responses, [email me](mailto:johncnmanuel@gmail.com) or [send me a DM 
 
 <details>
 <summary><b>bio in the programmer way</b></summary>
+
 ```python
 >>> from goated_programmers import johncmanuel
 >>> import json
@@ -55,6 +56,7 @@ For quick responses, [email me](mailto:johncnmanuel@gmail.com) or [send me a DM 
   ]
 }
 ```
+
 </details>
 
 <hr />
