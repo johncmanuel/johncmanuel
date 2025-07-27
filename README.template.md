@@ -2,12 +2,12 @@
 
 - 👨‍ Software engineer with experience in full-stack web development 
 - 🎓 Currently completing my BS in Computer Science at Cal State Fullerton
-- 📦 {{.PublicReposCount}} public repositories, ⭐ {{.StarGazersCount}} total stars
+- 📦 {{.PublicReposCount}} public repositories, ⭐ {{.StarGazersCount}} stargazers 
 - 💻 Most used languages:&nbsp;{{range $i, $lang := .Languages}}{{.Language | html}} ({{.Percentage}}%){{if notLastElement $i $.Languages}}, {{end}}{{end}} 
 - 💡 Interests: Full-Stack Development, Game Development, Distributed Systems
 - 😊 Hobbies: Video Games, Anime, Code, Writing, Manga, Reading
 
-## links  
+## Links  
 
 - Website: [johncarlomanuel.com](https://johncarlomanuel.com/)
 - Resume: [johncmanuel.com/resume](https://johncarlomanuel.com/resume)
