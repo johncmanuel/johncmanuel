@@ -1,11 +1,11 @@
-<h1 align="center">johncmanuel 🇵🇭 🇺🇸</h1>
+<h1 align="center">John Carlo Manuel 🇵🇭 🇺🇸</h1>
 
-- Software engineer with experience in full-stack web development 
-- Currently completing my BS in Computer Science at Cal State Fullerton
-- {{.PublicReposCount}} public repositories, {{.StarGazersCount}} total stars
-- Most used languages: {{range $i, $lang := .Languages}}{{.Language | html}} ({{.Percentage}}%){{if notLastElement $i $.Languages}}, {{end}}{{end}} 
-- Interests: Full-Stack Development, Game Development, Distributed Systems
-- Hobbies: Video Games, Anime, Code, Writing, Manga, Reading
+- 👨‍ Software engineer with experience in full-stack web development 
+- 🎓 Currently completing my BS in Computer Science at Cal State Fullerton
+- 📦 {{.PublicReposCount}} public repositories, ⭐ {{.StarGazersCount}} total stars
+- 💻 Most used languages:&nbsp; {{range $i, $lang := .Languages}}{{.Language | html}} ({{.Percentage}}%){{if notLastElement $i $.Languages}}, {{end}}{{end}} 
+- 💡 Interests: Full-Stack Development, Game Development, Distributed Systems
+- 😊 Hobbies: Video Games, Anime, Code, Writing, Manga, Reading
 
 ## links  
 
@@ -13,7 +13,7 @@
 - Resume: [johncmanuel.com/resume](https://johncarlomanuel.com/resume)
 - Blog: [registers.johncarlomanuel.com](https://registers.johncarlomanuel.com/)
 
-For quick responses, [email me](mailto:johncnmanuel@gmail.com) or [send me a DM on X](https://x.com/messages/compose?recipient_id=1727183654676500480).
+❗ For quick responses, [email me](mailto:johncnmanuel@gmail.com) or [send me a DM on X](https://x.com/messages/compose?recipient_id=1727183654676500480).
 
 <details>
 <summary><b>bio in the programmer way</b></summary>
