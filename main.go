@@ -16,9 +16,11 @@ import (
 	"github.com/joho/godotenv"
 )
 
-var client = &http.Client{Timeout: 15 * time.Second}
-var username = "johncmanuel"
-var ghUrl = "https://api.github.com"
+var (
+	client   = &http.Client{Timeout: 15 * time.Second}
+	username = "johncmanuel"
+	ghUrl    = "https://api.github.com"
+)
 
 func main() {
 	templateFile := "README.template.md"
@@ -35,8 +37,8 @@ func main() {
 
 	data := ReadMeData{
 		PublicReposCount: strconv.Itoa(repos),
-		StarGazersCount: strconv.Itoa(stars),
-		Languages: topLangs,
+		StarGazersCount:  strconv.Itoa(stars),
+		Languages:        topLangs,
 	}
 
 	funcMap := template.FuncMap{
@@ -59,7 +61,7 @@ func main() {
 
 	// Save the generated markdown to a new file
 	outputFile := "README.md"
-	
+
 	err = os.WriteFile(outputFile, output.Bytes(), 0644)
 	if err != nil {
 		fmt.Println("Error writing output file:", err)
@@ -70,8 +72,8 @@ func main() {
 }
 
 type GitHubRepository struct {
-	StargazersCount int `json:"stargazers_count"`
-	LanguagesURL string `json:"languages_url"`
+	StargazersCount int    `json:"stargazers_count"`
+	LanguagesURL    string `json:"languages_url"`
 }
 
 type Languages map[string]int
@@ -85,20 +87,20 @@ type LanguagePercentage struct {
 // them into the README
 type ReadMeData struct {
 	PublicReposCount string
-	StarGazersCount string
-	Languages []LanguagePercentage
+	StarGazersCount  string
+	Languages        []LanguagePercentage
 }
 
 func httpAuthReq(method string, url string, token string) *http.Request {
 	req, err := http.NewRequest(method, url, nil)
 	if err != nil {
-		return nil 
+		return nil
 	}
 	req.Header.Add("Authorization", fmt.Sprintf("Bearer %s", token))
 	return req
 }
 
-// Return number of stars, number of public repos, and language 
+// Return number of stars, number of public repos, and language
 // percentage across repos
 func getGitHubStats() (int, int, Languages, error) {
 	err := godotenv.Load()
@@ -113,14 +115,14 @@ func getGitHubStats() (int, int, Languages, error) {
 
 	repoUrl := fmt.Sprintf("%s/users/%s/repos", ghUrl, username)
 	repoReq := httpAuthReq("GET", repoUrl, token)
-	
+
 	var repos []GitHubRepository
 
 	response, err := client.Do(repoReq)
-    if err != nil {
-       	panic("Error getting a response.")
-    }
-    defer response.Body.Close()
+	if err != nil {
+		panic("Error getting a response.")
+	}
+	defer response.Body.Close()
 
 	// Contains a language and the number of bytes of
 	// code for that language (across all public repos)
@@ -128,8 +130,8 @@ func getGitHubStats() (int, int, Languages, error) {
 	languages := make(Languages)
 
 	if err := json.NewDecoder(response.Body).Decode(&repos); err != nil {
-        panic("Error decoding a response.")
-    }
+		panic("Error decoding a response.")
+	}
 
 	numOfStargazers := 0
 
@@ -137,8 +139,8 @@ func getGitHubStats() (int, int, Languages, error) {
 	for _, repo := range repos {
 		numOfStargazers += repo.StargazersCount
 
-		langReq := httpAuthReq("GET", repo.LanguagesURL, token) 
-        res, err := client.Do(langReq)
+		langReq := httpAuthReq("GET", repo.LanguagesURL, token)
+		res, err := client.Do(langReq)
 		if err != nil {
 			fmt.Println("Error fetching the following language_url:", repo.LanguagesURL)
 			continue
@@ -158,7 +160,7 @@ func getGitHubStats() (int, int, Languages, error) {
 			fmt.Println("Error unmarshaling JSON:", err)
 			continue
 		}
-		
+
 		for language, bytes := range data {
 			_, ok := languages[language]
 			if ok {
@@ -167,7 +169,7 @@ func getGitHubStats() (int, int, Languages, error) {
 				languages[language] = bytes
 			}
 		}
-    }
+	}
 
 	return numOfStargazers, len(repos), languages, err
 }
@@ -202,7 +204,7 @@ func getTopLangs(languages Languages) []LanguagePercentage {
 		otherPercent += lp.Percentage
 	}
 
-	topLangs = append(topLangs, LanguagePercentage{"Other", otherPercent})
+	topLangs = append(topLangs, LanguagePercentage{"Others", otherPercent})
 
 	return topLangs
 }
