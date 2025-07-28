@@ -13,6 +13,8 @@
 - Resume: [johncmanuel.com/resume](https://johncarlomanuel.com/resume)
 - Blog: [registers.johncarlomanuel.com](https://registers.johncarlomanuel.com/)
 
+## Contact
+
 ❗ For quick responses, [email me (preferred)](mailto:johncnmanuel@gmail.com) or [send me a DM on X](https://x.com/messages/compose?recipient_id=1727183654676500480).
 
 <details>
