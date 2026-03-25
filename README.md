@@ -3,7 +3,7 @@
 - 👨‍ Software engineer with experience in full-stack web development 
 - 🎓 Currently completing my BS in Computer Science at Cal State Fullerton
 - 📦 30 public repositories, ⭐ 12 stargazers 
-- 💻 Most used languages:&nbsp;Python (40%), TypeScript (33%), C++ (10%), Others (17%) 
+- 💻 Most used languages:&nbsp;Python (39%), TypeScript (34%), C++ (10%), Others (18%) 
 - 💡 Interests: Full-Stack Development, Game Development, Distributed Systems
 - 😊 Hobbies: Video Games, Anime, Code, Writing, Manga, Reading
 
@@ -44,16 +44,16 @@
   },
   "languages": {
     "Python": {
-      "usage_percent": 40
+      "usage_percent": 39
     },
     "TypeScript": {
-      "usage_percent": 33
+      "usage_percent": 34
     },
     "C++": {
       "usage_percent": 10
     },
     "Others": {
-      "usage_percent": 17
+      "usage_percent": 18
     }
   },
   "hobbies": [
