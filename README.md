@@ -1,10 +1,10 @@
 <h1 align="center">John Carlo Manuel 🇵🇭 🇺🇸</h1>
 
 - 👨‍ Software engineer with experience in full-stack web development 
-- 🎓 Currently completing my BS in Computer Science at Cal State Fullerton
+- 🎓 Completed my BS in Computer Science at Cal State Fullerton 🐘
 - 📦 30 public repositories, ⭐ 12 stargazers 
 - 💻 Most used languages:&nbsp;Python (39%), TypeScript (34%), C++ (10%), Others (18%) 
-- 💡 Interests: Full-Stack Development, Game Development, Distributed Systems
+- 💡 Interests: Full-Stack Development (leaning towards backend), Game Development, Distributed Systems
 - 😊 Hobbies: Video Games, Anime, Code, Writing, Manga, Reading
 
 ## Links  
